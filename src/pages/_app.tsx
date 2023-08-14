@@ -5,8 +5,6 @@ import Head from "next/head";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 
-import { Header } from "~/components/Header";
-
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
@@ -21,9 +19,8 @@ const MyApp: AppType<{ session: Session | null }> = ({
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container mx-auto">
-        <Header></Header>
-        <div className="min-h-screen flex-grow border-x">
+      <div className="container mx-auto flex bg-backgroundDark text-white">
+        <div className="min-h-screen flex-grow ">
           <Component {...pageProps} />
         </div>
       </div>

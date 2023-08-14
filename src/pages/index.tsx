@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <main className="">
-        <div className="">TEST TEST</div>
+        <div className="">Welcome</div>
       </main>
     </>
   );
